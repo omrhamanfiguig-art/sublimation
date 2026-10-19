@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>استوديو القمصان الرياضية — Sublimation</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cairo:wght@400;700;800&family=Oswald:wght@600&family=Teko:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f5f1;--pn:#fff;--tx:#1c1b19;--mut:#6f6c66;--ac:#1d4ed8;--br:#e3e0d8;--mq:#d4cfc4;--mq2:#a9a397;--st:#eceae4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121214;--pn:#1b1b1f;--tx:#f1efe9;--mut:#9a968d;--ac:#6d9bff;--br:#2c2c32;--mq:#4d4d56;--mq2:#34343b;--st:#18181c}}
+:root[data-theme="dark"]{--bg:#121214;--pn:#1b1b1f;--tx:#f1efe9;--mut:#9a968d;--ac:#6d9bff;--br:#2c2c32;--mq:#4d4d56;--mq2:#34343b;--st:#18181c}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Cairo,system-ui,sans-serif;line-height:1.5}
+header{padding:16px 18px 4px}h1{margin:0;font-size:20px;font-weight:800}header p{margin:2px 0 0;color:var(--mut);font-size:13px}
+.app{display:grid;grid-template-columns:350px 1fr;gap:16px;padding:12px 18px 24px;max-width:1200px;margin:auto}
+@media(max-width:860px){.app{grid-template-columns:1fr}}
+.ctl,.stage{background:var(--pn);border:1px solid var(--br);border-radius:14px;padding:14px}
+.ctl h3{margin:14px 0 6px;font-size:13px;color:var(--mut);font-weight:700}.ctl h3:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+button{font:inherit;font-size:13px;color:var(--tx);background:transparent;border:1px solid var(--br);border-radius:8px;padding:5px 11px;cursor:pointer}
+button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.row{display:flex;align-items:center;gap:8px;margin:6px 0;flex-wrap:wrap;font-size:13px}
+.row label{color:var(--mut)}
+input[type=color]{width:34px;height:30px;padding:0;border:1px solid var(--br);border-radius:6px;background:none;cursor:pointer}
+input[type=text],select{font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--br);border-radius:8px;background:var(--bg);color:var(--tx);width:100%;max-width:150px}
+input[type=range]{flex:1}
+.pals{display:flex;gap:6px;flex-wrap:wrap}.pal{width:44px;height:28px;padding:0;border-radius:7px;overflow:hidden;display:flex}.pal i{flex:1}
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.stage{background:var(--st)}
+.mock{display:flex;gap:6px;justify-content:center}.mock figure{margin:0;flex:1;max-width:380px;text-align:center}
+.mock svg,.sheet{width:100%;height:auto;display:block}
+figcaption{font-size:12px;color:var(--mut)}
+.note{font-size:12px;color:var(--mut);margin-top:8px}
+.app{grid-template-columns:300px 1fr;gap:12px;padding:8px 12px 16px}
+.ctl{padding:4px 10px;font-size:12px;position:sticky;top:8px;max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px);overflow-y:auto;align-self:start;scrollbar-width:thin}
+.ctl details{border-bottom:1px solid var(--br);padding:1px 0}.ctl details:last-child{border:0}
+.ctl summary{cursor:pointer;font-size:12.5px;font-weight:700;padding:8px 2px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.ctl summary::-webkit-details-marker{display:none}.ctl summary::after{content:'▾';color:var(--mut);transition:transform .15s}.ctl details[open] summary::after{transform:rotate(180deg)}
+.ctl details>*:not(summary){margin-bottom:6px}
+button{font-size:12px;padding:3px 8px;border-radius:7px}
+.row{gap:6px;margin:4px 0;font-size:12px}
+input[type=color]{width:28px;height:24px}
+input[type=text],select{font-size:12px;padding:3px 6px}
+.pal{width:36px;height:22px}
+.mock svg{max-height:calc(100vh - 170px)}
+@media(max-width:860px){.app{grid-template-columns:1fr}.stage{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;order:-1;padding:8px}.ctl{position:static;max-height:none;overflow:visible}.mock svg,.sheet{max-height:36vh}.note{display:none}header{padding:8px 12px 0}h1{font-size:16px}header p{display:none}.tabs{margin-bottom:6px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs id="defs"></defs></svg>
+<header><h1>👕 استوديو القمصان الرياضية — Sublimation</h1><p>صمّم القطع المطبوعة، شاهدها مخيّطة على موكاب، وأضف الاسم والرقم.</p></header>
+<div class="app">
+<aside class="ctl">
+<h3>الفئة والمقاس</h3>
+<div class="chips"><button data-k="g" data-v="m">رجالي</button><button data-k="g" data-v="f">نسائي</button><button data-k="age" data-v="adult">بالغ</button><button data-k="age" data-v="kid">أطفال</button></div>
+<div class="chips" id="sizes" style="margin-top:6px"></div>
+<h3>النقش (طباعة القماش)</h3>
+<div class="chips"><button data-k="pat" data-v="center">خط مركزي</button><button data-k="pat" data-v="stripes">خطوط</button><button data-k="pat" data-v="chev">شيفرون</button><button data-k="pat" data-v="grad">تدرّج</button><button data-k="pat" data-v="wave">أمواج</button><button data-k="pat" data-v="diag">قُطري</button><button data-k="pat" data-v="img">🖼️ صورتي</button></div>
+<h3>لوحات ألوان جاهزة</h3><div class="pals" id="pals"></div>
+<div class="row"><label>أساسي</label><input type="color" data-k="c1"><label>ثانوي</label><input type="color" data-k="c2"><label>إضافي</label><input type="color" data-k="c3"><label>حواف</label><input type="color" data-k="trim"></div>
+<h3>صورة النقش</h3>
+<div class="row"><input type="file" accept="image/*" data-img="patImg" id="pf" hidden><button onclick="document.getElementById('pf').click()">📷 رفع صورة</button><button data-clr="patImg">حذف</button><span class="chips"><button data-k="imode" data-v="fill">ملء القطعة</button><button data-k="imode" data-v="tile">تكرار</button></span></div>
+<div class="row"><label>حجم التكرار</label><input type="range" min="30" max="240" value="80" data-k="isz"></div>
+<div class="row"><label>تكبير الصورة</label><input type="range" min="30" max="300" value="100" data-k="izm"></div>
+<div class="row"><label>إزاحة أفقية</label><input type="range" min="-200" max="200" value="0" data-k="ix"></div>
+<div class="row"><label>إزاحة رأسية</label><input type="range" min="-300" max="300" value="0" data-k="iy"></div>
+<h3>الشعار</h3>
+<div class="row"><input type="file" accept="image/*" data-img="logoImg" id="lf" hidden><button onclick="document.getElementById('lf').click()">🏷️ رفع شعار</button><button data-clr="logoImg">حذف</button></div>
+<div class="row"><label>حجم الشعار</label><input type="range" min="20" max="60" value="30" data-k="lsz"></div>
+<h3>شعارات الأكمام</h3>
+<div class="row"><input type="file" accept="image/*" data-img="rsImg" id="rsf" hidden><button onclick="document.getElementById('rsf').click()">شعار الكم الأيمن</button><button data-clr="rsImg">حذف</button></div>
+<div class="row"><input type="file" accept="image/*" data-img="lsImg" id="lsf" hidden><button onclick="document.getElementById('lsf').click()">شعار الكم الأيسر</button><button data-clr="lsImg">حذف</button></div>
+<div class="row"><label>حجم شعار الكم</label><input type="range" min="14" max="40" value="24" data-k="ssz"></div>
+<h3>تخصيص كل قطعة</h3>
+<div class="row"><label>الأكمام</label><span class="chips"><button data-k="sm" data-v="same">نفس النقش</button><button data-k="sm" data-v="solid">لون موحّد</button></span><input type="color" data-k="sc"></div>
+<div class="row"><label>الياقة</label><span class="chips"><button data-k="col" data-v="round">دائرية</button><button data-k="col" data-v="v">V</button></span><input type="color" data-k="cc"></div>
+<div class="row"><label>الشورت</label><span class="chips"><button data-k="sh" data-v="1">مع</button><button data-k="sh" data-v="0">بدون</button></span></div>
+<div class="row"><label>قماش الشورت</label><span class="chips"><button data-k="shm" data-v="same">نفس النقش</button><button data-k="shm" data-v="solid">موحّد</button><button data-k="shm" data-v="img">صورة</button></span><input type="color" data-k="shc"></div>
+<div class="row"><input type="file" accept="image/*" data-img="shImg" id="shf" hidden><button onclick="document.getElementById('shf').click()">📷 صورة للشورت</button><button data-clr="shImg">حذف</button><label>تكبير</label><input type="range" min="30" max="300" value="100" data-k="szm"></div>
+<h3>الترقيم والاسم</h3>
+<div class="row"><input type="text" data-k="name" placeholder="الاسم" maxlength="14"><input type="text" data-k="num" placeholder="الرقم" maxlength="3" style="max-width:70px"><input type="text" data-k="logo" placeholder="شعار" maxlength="2" style="max-width:60px"></div>
+<div class="row"><select data-k="font"><option>Anton</option><option>Bebas Neue</option><option>Oswald</option><option>Teko</option><option>Cairo</option></select><label>تعبئة</label><input type="color" data-k="nf"><label>حد</label><input type="color" data-k="ns"></div>
+</aside>
+<main class="stage">
+<div class="tabs"><button data-k="view" data-v="mock">الموكاب</button><button data-k="view" data-v="flat">قطع الطباعة (Sublimation)</button></div>
+<div class="row" id="exrow"><label>فصل القطع</label><input type="range" min="0" max="60" data-k="ex" value="0"></div>
+<div id="out"></div>
+<p class="note" id="note"></p>
+</main>
+</div>
+<script>
+const S={g:'m',age:'adult',size:'M',pat:'center',c1:'#101a3a',c2:'#e63946',c3:'#ffffff',trim:'#e63946',sm:'same',sc:'#101a3a',col:'round',cc:'#e63946',sh:'1',shm:'same',shc:'#101a3a',name:'DYNASTY',num:'10',font:'Anton',nf:'#ffffff',ns:'#e63946',logo:'D',view:'mock',ex:0,logoImg:'',patImg:'',imode:'fill',isz:80,lsz:30,izm:100,ix:0,iy:0,shImg:'',szm:100,rsImg:'',lsImg:'',ssz:24};
+const C=160,$=s=>document.querySelector(s),esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PAL=[['#101a3a','#e63946','#ffffff'],['#0b0b0c','#d4a62a','#ffffff'],['#0f6b3a','#ffffff','#bfe8cf'],['#1e5bd8','#ffd23f','#ffffff'],['#7a1230','#f2c14e','#ffffff'],['#f4f4f2','#0b0b0c','#e63946']];
+const M={adult:{S:[50,70],M:[53,72],L:[56,74],XL:[59,76]},kid:{6:[38,46],8:[41,50],10:[44,54],12:[47,58],14:[50,62]}};
+const sh=()=>S.g==='f'?54:60,ins=()=>S.g==='f'?13:0;
+function neck(sd){const d=sd==='f'?(S.col==='v'?`L${C},106 L${C+30},32`:`Q${C},104 ${C+30},32`):`Q${C},58 ${C+30},32`;return `M${C-30},32 ${d}`}
+function bodyD(sd){const s=sh(),i=ins();return `M${C-s},32 ${neck(sd).replace('M','L')} L${C+s},32 Q${C+s+18},62 ${C+76},115 Q${C+76-2*i},215 ${C+78-i/2},332 L${C-78+i/2},332 Q${C-76+2*i},215 ${C-76},115 Q${C-s-18},62 ${C-s},32Z`}
+const shD=`M${C-72},326 L${C+72},326 L${C+86},442 L${C+6},442 L${C},384 L${C-6},442 L${C-86},442Z`;
+function patDef(){const{pat:p,c1,c2,c3}=S;
+ if(p==='img'){if(!S.patImg)return `<pattern id="pb" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="${c1}"/></pattern>`;const t=S.imode==='tile',w=t?S.isz:320,h=t?S.isz:480,iw=t?w:320*S.izm/100,ih=t?h:480*S.izm/100,ix=t?0:160-iw/2+ +S.ix,iy=t?0:240-ih/2+ +S.iy;return `<pattern id="pb" width="${w}" height="${h}" patternUnits="userSpaceOnUse"><rect width="${w}" height="${h}" fill="${c1}"/><image href="${S.patImg}" x="${ix}" y="${iy}" width="${iw}" height="${ih}" preserveAspectRatio="xMidYMid slice"/></pattern>`}
+ if(p==='stripes')return `<pattern id="pb" width="26" height="10" patternUnits="userSpaceOnUse"><rect width="26" height="10" fill="${c1}"/><rect width="11" height="10" fill="${c2}"/><rect x="11" width="2" height="10" fill="${c3}" opacity=".8"/></pattern>`;
+ if(p==='chev')return `<pattern id="pb" width="40" height="30" patternUnits="userSpaceOnUse"><rect width="40" height="30" fill="${c1}"/><path d="M0 15L20 0L40 15V25L20 10L0 25Z" fill="${c2}"/><path d="M0 28L20 13L40 28" stroke="${c3}" stroke-width="1.5" fill="none" opacity=".7"/></pattern>`;
+ let b=`<rect width="320" height="480" fill="${c1}"/>`;
+ if(p==='center'){for(let x=0;x<320;x+=9)b+=`<rect x="${x}" width="3" height="480" fill="${c3}" opacity=".18"/>`;b+=`<rect x="144" width="32" height="480" fill="${c2}"/><rect x="138" width="3" height="480" fill="${c3}"/><rect x="179" width="3" height="480" fill="${c3}"/>`}
+ if(p==='grad'){b=`<linearGradient id="gg" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="0" y2="380"><stop stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient><rect width="320" height="480" fill="url(#gg)"/>`;for(let y=40;y<470;y+=26){let d=`M0 ${y}`;for(let x=0;x<=320;x+=32)d+=`L${x+16} ${y-14}L${x+32} ${y}`;b+=`<path d="${d}" stroke="${c3}" stroke-width="2" fill="none" opacity=".35"/>`}}
+ if(p==='wave')for(let y=20;y<480;y+=24)b+=`<path d="M-20 ${y} q20 -16 40 0${' t40 0'.repeat(9)}" stroke="${c2}" stroke-width="7" fill="none"/><path d="M-20 ${y+9} q20 -16 40 0${' t40 0'.repeat(9)}" stroke="${c3}" stroke-width="1.5" fill="none" opacity=".6"/>`;
+ if(p==='diag')b+=`<polygon points="0,150 320,30 320,110 0,230" fill="${c2}"/><polygon points="0,238 320,118 320,126 0,246" fill="${c3}"/><polygon points="0,330 320,210 320,250 0,370" fill="${c2}" opacity=".9"/>`;
+ return `<pattern id="pb" width="320" height="480" patternUnits="userSpaceOnUse">${b}</pattern>`}
+const shPat=()=>{const z=S.szm/100,w=180*z,h=116*z;return `<pattern id="ps" width="320" height="480" patternUnits="userSpaceOnUse"><rect width="320" height="480" fill="${S.shc}"/>${S.shImg?`<image href="${S.shImg}" x="${160-w/2}" y="${384-h/2}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>`:''}</pattern>`};
+const defs=()=>patDef()+shPat()+`<clipPath id="clf"><path d="${bodyD('f')}"/></clipPath><clipPath id="clb"><path d="${bodyD('b')}"/></clipPath><clipPath id="cls"><path d="${shD}"/></clipPath><linearGradient id="shade" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".3"/><stop offset=".25" stop-color="#000" stop-opacity="0"/><stop offset=".75" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient>`;
+const tx=(t,x,y,z,e='')=>`<text x="${x}" y="${y}" font-size="${z}" text-anchor="middle" font-family="'${S.font}','Cairo',sans-serif" fill="${S.nf}" stroke="${S.ns}" stroke-width="${z/14}" paint-order="stroke" stroke-linejoin="round" ${e}>${esc(t)}</text>`;
+const ST='stroke="rgba(0,0,0,.4)" stroke-width="1"';
+const slg=(u,fl)=>{if(!u)return'';const z=+S.ssz,cx=C+104,cy=80;return `<image href="${u}" x="${cx-z/2}" y="${cy-z/2}" width="${z}" height="${z}" preserveAspectRatio="xMidYMid meet" ${fl?`transform="translate(${2*cx} 0) scale(-1 1)"`:''}/>`};
+const lg=()=>S.logoImg?`<image href="${S.logoImg}" x="${C+40-S.lsz/2}" y="${86-S.lsz/2}" width="${S.lsz}" height="${S.lsz}" preserveAspectRatio="xMidYMid meet"/>`:`<circle cx="${C+40}" cy="86" r="13" fill="${S.c2}" stroke="${S.c3}" stroke-width="2"/><text x="${C+40}" y="91" font-size="14" font-weight="800" text-anchor="middle" fill="${S.c3}" font-family="Cairo,sans-serif">${esc(S.logo)}</text>`;
+function parts(sd){const s=sh(),n=neck(sd),bd=bodyD(sd),fs=S.sm==='same'?'url(#pb)':S.sc,nz=S.num.length>2?96:136;
+ const pr=sd==='f'?lg()+tx(S.num,C,176,58):tx(S.name,C,92,Math.min(26,190/Math.max(S.name.length,1)*1.7),'letter-spacing="2"')+tx(S.num,C,222,nz);
+ const sdD=`M${C+s},32 L${C+128},66 L${C+104},122 L${C+76},115 Q${C+s+18},62 ${C+s},32Z`,cf=`M${C+128},66 L${C+104},122 L${C+96},118 L${C+120},62Z`;
+ const fsh=S.shm==='same'?'url(#pb)':S.shm==='img'?'url(#ps)':S.shc;
+ return{body:`<g clip-path="url(#cl${sd})"><path d="${bd}" fill="url(#pb)"/><rect x="70" y="321" width="180" height="12" fill="${S.trim}"/></g><path d="${bd}" fill="url(#shade)" ${ST}/>${pr}`,
+ sleeve:`<path d="${sdD}" fill="${fs}"/><path d="${cf}" fill="${S.trim}"/><path d="${sdD}" fill="url(#shade)" ${ST}/>`,
+ collar:`<path d="${n}" fill="none" stroke="${S.cc}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>`,
+ shorts:`<g clip-path="url(#cls)"><path d="${shD}" fill="${fsh}"/><rect x="70" y="326" width="180" height="10" fill="${S.trim}"/><path d="M${C-72},326 L${C-86},442 L${C-76},442 L${C-62},326Z M${C+72},326 L${C+86},442 L${C+76},442 L${C+62},326Z" fill="${S.trim}"/></g><path d="${shD}" fill="url(#shade)" ${ST}/>`+(sd==='f'?tx(S.num,C-44,412,28):'')}}
+function mock(k){const ex=+S.ex,hk=S.age==='kid'?26:21,h=S.sh==='1'?660:430,mq=`<g fill="var(--mq)">${S.g==='f'?`<path d="M${C-27},-18 Q${C-34},50 ${C-24},64 L${C+24},64 Q${C+34},50 ${C+27},-18Z" fill="var(--mq2)"/>`:''}<ellipse cx="${C}" cy="-18" rx="${hk}" ry="${hk*1.3}"/><rect x="${C-11}" y="-2" width="22" height="46"/><path d="M${C+112},96 L${C+122},240 M${C-112},96 L${C-122},240" stroke="var(--mq)" stroke-width="24" stroke-linecap="round" fill="none"/>${S.sh==='1'?`<rect x="${C-62}" y="430" width="46" height="150" rx="14"/><rect x="${C+16}" y="430" width="46" height="150" rx="14"/>`:''}</g>`;
+ const one=(sd,cap)=>{const p=parts(sd);return `<figure><svg viewBox="-30 -70 380 ${h}">${''}<g transform="translate(${C*(1-k)} 0) scale(${k})">${mq}${S.sh==='1'?`<g transform="translate(0 ${ex*.7})">${p.shorts}</g>`:''}${p.body}<g transform="translate(${ex*.6} ${ex*.15})">${p.sleeve}${sd==='f'?slg(S.lsImg,false):''}</g><g transform="translate(${2*C-ex*.6} ${ex*.15}) scale(-1 1)">${p.sleeve}${sd==='f'?slg(S.rsImg,true):''}</g><g transform="translate(0 ${-ex*.5})">${p.collar}</g></g></svg><figcaption>${cap}</figcaption></figure>`};
+ return `<div class="mock">${one('f','أمام')}${one('b','خلف')}</div>`}
+function flat(){const f=parts('f'),b=parts('b'),[cw,cl]=M[S.age][S.size],w=cw-(S.g==='f'?3:0),lb=(x,y,t)=>`<text x="${x}" y="${y}" font-size="12" text-anchor="middle" fill="var(--tx)" font-family="Cairo,sans-serif">${t}</text>`,cut='fill="none" stroke="var(--mut)" stroke-dasharray="5 4"';
+ return `<svg class="sheet" viewBox="0 0 700 400"><g transform="translate(-40 0)">${f.body}<path d="${bodyD('f')}" ${cut}/></g>${lb(160,360,`أمام ×1 · عرض الصدر ≈ ${w} سم · الطول ≈ ${cl} سم`)}
+<g transform="translate(170 0)">${b.body}<path d="${bodyD('b')}" ${cut}/></g>${lb(380,360,'خلف ×1')}
+<g transform="translate(250 10)">${f.sleeve}${slg(S.rsImg,false)}</g><g transform="translate(860 10) scale(-1 1)">${f.sleeve}${slg(S.lsImg,true)}</g>${lb(504,146,'كمّ أيمن ×1')}${lb(610,146,'كمّ أيسر ×1')}
+<rect x="470" y="160" width="170" height="14" rx="7" fill="${S.cc}"/>${lb(555,192,'شريط الياقة ×1')}
+${S.sh==='1'?`<g transform="translate(400 -120)">${f.shorts}</g>${lb(560,340,'شورت أمام/خلف ×2')}`:''}</svg>`}
+function sizes(){$('#sizes').innerHTML=Object.keys(M[S.age]).map(s=>`<button data-k="size" data-v="${s}">${s}</button>`).join('')}
+function ui(){sizes();document.querySelectorAll('button[data-k]').forEach(b=>b.classList.toggle('on',S[b.dataset.k]===b.dataset.v));document.querySelectorAll('input[data-k],select[data-k]').forEach(i=>{if(i.type!=='range'&&document.activeElement!==i)i.value=S[i.dataset.k]})}
+function render(){$('#defs').innerHTML=defs();$('#exrow').style.display=S.view==='mock'?'flex':'none';
+ $('#out').innerHTML=S.view==='mock'?mock(S.age==='kid'?.8:1):flat();
+ $('#note').textContent=S.view==='mock'?'حرّك «فصل القطع» لرؤية القطع قبل التخييط. الأطفال يظهرون بحجم أصغر على الموكاب.':'كل قطعة تُطبع بنقشها الكامل بالتسامي على ورق نقل، ثم تُكبس حراريًا على القماش قبل القص والخياطة. الخط المتقطّع = خط القص، والمقاسات تقريبية.'}
+document.addEventListener('click',e=>{const b=e.target.closest('button[data-k]');if(b){S[b.dataset.k]=b.dataset.v;if(b.dataset.k==='age')S.size=S.age==='kid'?'10':'M';ui();render()}const p=e.target.closest('.pal');if(p){const a=PAL[p.dataset.i];Object.assign(S,{c1:a[0],c2:a[1],c3:a[2],trim:a[1],sc:a[0],cc:a[1],shc:a[0]});ui();render()}});
+document.addEventListener('input',e=>{const t=e.target;if(t.dataset.k){S[t.dataset.k]=t.value;render()}});
+function loadImg(f,key){const png=key!=='patImg'&&key!=='shImg',mx=png?400:1000,r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,mx/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);const x=c.getContext('2d');if(!png){x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height)}x.drawImage(im,0,0,c.width,c.height);S[key]=c.toDataURL(png?'image/png':'image/jpeg',.88);if(key==='patImg')S.pat='img';if(key==='shImg')S.shm='img';ui();render()};im.src=r.result};r.readAsDataURL(f)}
+document.addEventListener('change',e=>{const t=e.target;if(t.type==='file'&&t.files[0]){loadImg(t.files[0],t.dataset.img);t.value=''}});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-clr]');if(b){S[b.dataset.clr]='';render()}});
+$('#pals').innerHTML=PAL.map((a,i)=>`<button class="pal" data-i="${i}">${a.map(c=>`<i style="background:${c}"></i>`).join('')}</button>`).join('');
+(function(){const c=document.querySelector('.ctl');let d=null,n=0;[...c.children].forEach(k=>{if(k.tagName==='H3'){d=document.createElement('details');if(n++<3)d.open=true;const s=document.createElement('summary');s.textContent=k.textContent;d.appendChild(s);c.insertBefore(d,k);k.remove()}else if(d)d.appendChild(k)})})();
+ui();render();
+</script>
+</body>
+</html>
